@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 10px;
+            margin: 10px;
+            background-color: rgb(147, 196, 196);
+            
+            
+        }
+        img{
+            display: grid;
+        }
+    
+    </style>
+</head>
+<body>
+
+
+    
+    
+    <p id="id1"><img src="fanoff.gif" alt="" style="width: 150px; display:list-item; "></p>
+    <button type="button"  onclick="fan_on()" >Fan on</button>
+    <button type="button" onclick="fan_off()">Fan off</button>
+    
+    <br>
+    <br>
+    <p id="id2"><img src="table_lamp _off.gif" alt="" style="width: 150px; display: flex;" > </p>
+    <button  type="button"  onclick="table_lamp_on()" >Table Lamp on</button>
+    <button type="button"  onclick="table_lamp_off()">Table Lamp off</button>
+    
+    <br>
+    <br>
+    <p id="id3"><img src="bulboff.gif" alt=""  style="width: 150px; display: flex;" ></p>
+    <button  type="button"  onclick="bulb_on()" >Bulb on</button>
+    <button type="button"  onclick="bulb_off()">Bulb off</button>
+    <br>
+    <br>
+    <p id="id4"><img src="street_offgif.gif" alt="" style="width: 150px; display: flex;"></p>
+    <button  type="button"  onclick="street_lamp_on()" >Street Lamp on</button>
+    <button type="button"  onclick="street_lamp_off()">Street Lamp off</button>
+
+<script>
+
+    function fan_on(){
+        document.getElementById("id1").innerHTML='<img src="fan.gif" alt="">'
+    }
+    function fan_off(){
+        document.getElementById("id1").innerHTML='<img src="fanoff.gif" alt="">'
+    }
+    function table_lamp_on(){
+        document.getElementById("id2").innerHTML='<img src="table_lamp.gif" alt="">'  
+    }
+    function table_lamp_off(){
+        document.getElementById("id2").innerHTML='<img src="table_lamp _off.gif" alt="">'
+    }
+    function bulb_on(){
+        document.getElementById("id3").innerHTML='<img src="bulbon.gif" alt="">'   
+    }
+    function bulb_off(){
+        document.getElementById("id3").innerHTML='<img src="bulboff.gif" alt="">'
+    }
+    function street_lamp_on(){
+        document.getElementById("id4").innerHTML='<img src="street_ongif.gif" alt="">'   
+    }
+    function street_lamp_off(){
+        document.getElementById("id4").innerHTML='<img src="street_offgif.gif" alt="">'
+    }
+
+    </script>
+</body>
+</html>

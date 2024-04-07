@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+
+
+
+</head>
+<body>  
+        <p id="id1"><img src="fanoff.gif" alt="" style="width: 150px; display:list-item; "></p>
+        <button type="button"  onclick="fan_on()" >Fan on</button>
+        <button type="button" onclick="fan_off()">Fan off</button>
+        <br>
+    <br>
+    <p id="id2"><img src="table_lamp _off.gif" alt="" style="width: 150px; display: flex;" > </p>
+    <button  type="button"  onclick="table_lamp_on()" >Table Lamp on</button>
+    <button type="button"  onclick="table_lamp_off()">Table  Lamp off</button>
+    <br>
+    <br>
+    <p id="id3"><img src="bulboff.gif" alt=""  style="width: 150px; display: flex;" ></p>
+    <button  type="button"  onclick="bulb_on()" >Bulb on</button>
+    <button type="button"  onclick="bulb_off()">Bulb off</button>
+    <br>
+    <br>
+    <p id="id4"><img src="street_offgif.gif" alt="" style="width: 150px; display: flex;"></p>
+    <button  type="button"  onclick="street_lamp_on()" >Street Lamp on</button>
+    <button type="button"  onclick="street_lamp_off()">Street Lamp off</button>
+
+<script>
+
+    function fan_on(){
+        document.getElementById("id1").innerHTML=' <img src="fan.gif" alt=""><iframe  id="id1" width="300" height="200" src="https://www.youtube.com/embed/LmYSxROkN3I" autoplay></iframe>'
+    }
+    function fan_off(){
+        document.getElementById("id1").innerHTML='<img src="fanoff.gif" alt="">'
+    }
+    
+
+
+
+
+
+   function table_lamp_on(){
+        document.getElementById("id1").innerHTML='<img src="table_lamp.gif" alt=""><iframe width="300" height="200" src="https://www.youtube.com/embed/IgbMkOfIWIQ"  autoplay></iframe> '    
+    }
+    function table_lamp_off(){
+        document.getElementById("id1").innerHTML=' <img src="table_lamp _off.gif" alt="">'
+    }
+    function bulb_on(){
+        document.getElementById("id1").innerHTML='<img src="bulbon.gif" alt=""><iframe width="300" height="200" src="https://www.youtube.com/embed/TPc7Dspn1_8" ></iframe>'    
+    }
+    function bulb_off(){
+        document.getElementById("id1").innerHTML='<img src="bulboff.gif" alt="">'
+    }
+    function street_lamp_on(){
+        document.getElementById("id1").innerHTML='<img src="street_ongif.gif" alt=""><iframe width="300" height="200" src="https://www.youtube.com/embed/5w-XfF5qydI" ></iframe>'   
+    }
+    function street_lamp_off(){
+        document.getElementById("id1").innerHTML='<img src="street_offgif.gif" alt="">'
+    }
+
+    </script>
+</body>
+</html>
