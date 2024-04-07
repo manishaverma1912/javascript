@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #container {
+        width: 600px;
+        height: 600px;
+        background-color: aqua;
+        position: relative;
+      }
+      #animate {
+        width: 100px;
+        border-radius: 50px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        top: 250px;
+        left: 250px;
+        
+        /* background-position-x: left; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="animate"></div>
+    </div>
+    <button type="button" onclick="moveleft()">click left</button>
+    <button type="button" onclick="moveright()">click right</button>
+    <button type="button" onclick="movetop()">click top</button>
+    <button type="button" onclick="movedown()">click down</button>
+    
+
+    <script>
+
+let posleft=250
+let posright=250
+let postop=250
+let posdown=250
+
+      function moveleft() {
+        const element = document.getElementById("animate");
+        posleft=posright;
+        id = setInterval(frame, 5);
+        function frame() {
+            if (posleft == 0) {
+            
+            } else {
+                posleft--;
+                
+                element.style.left = posleft + "px";
+            }
+        }
+    }
+    function moveright() {
+        const element = document.getElementById("animate");
+        posright=posleft;    
+        id = setInterval(frame, 5);
+        function frame() {
+            if (posright == 500) {
+            } else {
+                posright++;
+                element.style.left = posright + "px";
+        
+            }
+        }
+    }
+    function movetop() {
+        const element = document.getElementById("animate");
+        postop=posdown
+        id = setInterval(frame, 5);
+        function frame() {
+            if (postop ==0) {
+        
+            } else {
+                postop--;
+                element.style.top = postop + "px";
+            }
+        }
+    }
+    function movedown() {
+        const element = document.getElementById("animate");
+        posdown=postop
+
+        id = setInterval(frame, 5);
+        function frame() {
+          if (posdown == 500) {
+        
+          } else {
+            posdown++;
+            element.style.top = posdown + "px";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

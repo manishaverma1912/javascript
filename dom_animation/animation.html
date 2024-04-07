@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+#container{
+width: 600px;
+height: 600px;
+background-color: aqua;
+position: relative;
+
+
+}
+#animate{
+    width: 100px;
+    border-radius: 50px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    background-position-x: left;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="animate"></div>
+    </div>
+    <button type="button" onclick="move()">click me</button>
+
+    <script>
+        function move(){
+            const element=document.getElementById("animate")
+            let pos=0;
+            id=setInterval(frame,2)
+            function frame(){
+                if(pos==500){
+                }
+                else{
+                    pos++;
+                    element.style.top  = pos+ "px"
+                   element.style.left  = pos+ "px"
+                }
+
+            } 
+        }
+    </script>
+    
+</body>
+</html>
