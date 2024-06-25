@@ -1,0 +1,72 @@
+
+body{
+    text-align: center;
+    background-color: rgb(227, 167, 202);
+    background-image:url("https://i.pinimg.com/originals/c6/c1/1d/c6c11d8ba0b9f26caf0a6a8ee3a3e78e.gif") ;
+
+}
+ h1{
+    text-align: center;
+    font-size: 40px;
+    font-style: oblique;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(8, 160, 26);
+    text-shadow: 4px 4px 3px rgb(11, 9, 170);
+background-image: linear-gradient(to right,blue,rgb(133, 12, 12),skyblue);} 
+    
+ /* .drum{
+    margin: 30px;
+    font-size: 40px;
+    padding: 70px;
+    border-radius: 8px;
+    border: 2px solid black;
+    text-shadow: 2px 2px 2px blue;
+    box-shadow: 3px 3px 3px rgb(238, 84, 13); */
+ /* } */
+ .pressed{
+    box-shadow: 4px 4px 4px  red;
+    opacity: 0.5px;
+}  
+
+
+
+/* body{
+    text-align: center;
+    background-image: url("Image/stage.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; */
+/* }
+h1{
+    font-size: 5rem;
+    color: azure;
+    font-family: cursive;
+    text-shadow: 3px 1px red;
+} */
+.set{
+    margin: 10% auto;
+}
+
+.drum{
+    outline: none;
+    border: 10px solid blueviolet;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 900;
+    color: tomato;
+    text-shadow: 3px 1px ghostwhite;
+    border-radius: 12px;
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    text-align: center;
+    margin: 10px;
+    background-color: white;
+}
+
+.pressed{
+    box-shadow: 1px 3px 4px 0 gainsboro;
+    opacity: 0.5;
+}
